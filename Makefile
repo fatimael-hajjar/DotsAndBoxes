@@ -1,7 +1,7 @@
 CC = gcc
 
-game: main.c logic.c
-	$(CC) -g  main.c logic.c -o game
+game: main.c logic.c bot.c
+    $(CC) -g main.c logic.c bot.c -o game
 
 run: game
 	./game
